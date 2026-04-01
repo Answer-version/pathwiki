@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Clock, BookOpen, Users, Heart, Share2, ArrowLeft } from "lucide-react";
+import { Clock, BookOpen, Heart, Share2, ArrowLeft } from "lucide-react";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import Breadcrumb from "@/components/layout/Breadcrumb";
@@ -29,17 +29,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: roadmap.metadata.metaTitle || `${roadmap.title} | PathWiki`,
-    description: roadmap.metadata.metaDescription || roadmap.description,
-    keywords: roadmap.metadata.keywords || roadmap.tags,
+    title: roadmap.metadata?.metaTitle || `${roadmap.title} | PathWiki`,
+    description: roadmap.metadata?.metaDescription || roadmap.description,
+    keywords: roadmap.metadata?.keywords || roadmap.tags,
     openGraph: {
-      title: roadmap.metadata.metaTitle || roadmap.title,
-      description: roadmap.metadata.metaDescription || roadmap.description,
-      images: roadmap.metadata.ogImage ? [roadmap.metadata.ogImage] : [],
+      title: roadmap.metadata?.metaTitle || roadmap.title,
+      description: roadmap.metadata?.metaDescription || roadmap.description,
+      images: roadmap.metadata?.ogImage ? [roadmap.metadata.ogImage] : [],
       type: "article",
     },
     alternates: {
-      canonical: roadmap.metadata.canonicalUrl,
+      canonical: roadmap.metadata?.canonicalUrl,
     },
   };
 }
@@ -83,7 +83,7 @@ export default async function RoadmapPage({ params }: PageProps) {
         </Link>
 
         {/* Header */}
-        <div className="bg-white dark:bg-slate-800 rounded-card border border-slate-100 dark:border-slate-700 p-6 mb-6">
+        <div className="bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 p-6 mb-6">
           <div className="flex items-start justify-between gap-4 mb-4">
             <div>
               <div className="flex items-center gap-2 mb-2">
@@ -122,23 +122,6 @@ export default async function RoadmapPage({ params }: PageProps) {
             ))}
           </div>
 
-          {/* Suitable For */}
-          {roadmap.suitableFor && roadmap.suitableFor.length > 0 && (
-            <div className="mb-4">
-              <p className="text-sm text-slate-500 mb-2">适合人群：</p>
-              <div className="flex flex-wrap gap-2">
-                {roadmap.suitableFor.map((item, index) => (
-                  <span
-                    key={index}
-                    className="px-2 py-1 bg-indigo-50 dark:bg-indigo-900/30 rounded text-xs text-indigo-600 dark:text-indigo-400"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
-
           {/* Actions */}
           <div className="flex gap-3">
             <Button variant="primary" className="flex-1">
@@ -156,22 +139,12 @@ export default async function RoadmapPage({ params }: PageProps) {
         </div>
 
         {/* Roadmap Tree */}
-        <div className="bg-white dark:bg-slate-800 rounded-card border border-slate-100 dark:border-slate-700 p-6">
+        <div className="bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 p-6">
           <h2 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-4">
             学习路线图
           </h2>
           <RoadmapTree nodes={roadmap.nodes} />
         </div>
-
-        {/* Related Roadmaps placeholder */}
-        {roadmap.relatedRoadmaps && roadmap.relatedRoadmaps.length > 0 && (
-          <div className="mt-6">
-            <h2 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-4">
-              相关路线
-            </h2>
-            {/* Related roadmaps would go here */}
-          </div>
-        )}
       </div>
     </>
   );
