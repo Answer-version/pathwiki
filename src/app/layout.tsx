@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Noto_Sans_SC } from "next/font/google";
 import Header from "@/components/layout/Header";
 import MobileNav from "@/components/layout/MobileNav";
+import Footer from "@/components/layout/Footer";
 import { SITE_CONFIG } from "@/config/site";
 import "./globals.css";
 
@@ -52,9 +53,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN" className={`${inter.variable} ${notoSansSC.variable}`}>
-      <body className="font-sans antialiased bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 min-h-screen">
+      <body className="font-sans antialiased bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
         <Header />
-        <main className="pt-14 md:pt-16 pb-20 md:pb-8">{children}</main>
+        <main className="pt-14 md:pt-16 pb-20 md:pb-8 flex-1">{children}</main>
+        <Footer />
         <MobileNav />
       </body>
     </html>

@@ -110,7 +110,7 @@ export default function HomePage() {
             准备好开始你的学习之旅了吗？
           </h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
-            加入 thousands of learners，开始系统化学习，提升你的职业技能。
+            加入数千名学习者，开始系统化学习，提升你的职业技能。
             所有内容完全免费。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
