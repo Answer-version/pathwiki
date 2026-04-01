@@ -1,0 +1,125 @@
+{
+  "id": "financial-analyst",
+  "slug": "financial-analyst",
+  "title": "金融分析师",
+  "subtitle": "从金融市场基础到量化分析入门",
+  "category": {
+    "id": "business",
+    "slug": "business",
+    "name": "商业",
+    "nameEn": "Business",
+    "icon": "💼",
+    "order": 4
+  },
+  "tags": ["金融", "财务分析", "估值建模", "量化分析", "投资"],
+  "difficulty": "beginner",
+  "estimatedTime": {
+    "value": 220,
+    "unit": "hours",
+    "note": "每天学习3小时，约73天"
+  },
+  "description": "从金融市场基础到财务分析、估值建模、量化入门，形成系统的金融分析能力。想进入金融分析领域，或在金融行业想系统提升分析能力的从业者/学生。",
+  "coverImage": {
+    "src": "/images/roadmaps/finance.jpg",
+    "alt": "金融分析师路线图"
+  },
+  "metadata": {
+    "metaTitle": "金融分析师学习路线 | PathWiki",
+    "metaDescription": "系统学习金融分析：金融市场/财务分析/估值建模/量化入门。220小时成就专业金融分析师。",
+    "keywords": ["金融", "财务分析", "估值建模", "量化分析", "投资研究"]
+  },
+  "nodes": [
+    {
+      "id": "financial-market",
+      "type": "phase",
+      "title": "金融市场基础",
+      "description": "股票/债券/基金/衍生品基础概念、各市场运作机制",
+      "icon": "📈",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
+      "resources": [
+        { "id": "far1", "title": "金融市场与机构", "type": "book", "isFree": false }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "financial-analysis",
+      "type": "phase",
+      "title": "财务分析",
+      "description": "财务报表解读（资产负债表/利润表/现金流量表）、财务比率",
+      "icon": "📊",
+      "estimatedTime": { "value": 35, "unit": "hours", "note": "约12天" },
+      "resources": [
+        { "id": "far2", "title": "财务报表分析", "type": "book", "isFree": false }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "valuation",
+      "type": "phase",
+      "title": "估值建模",
+      "description": "DCF现金流折现、相对估值法（PE/PB/PS）、LBO基础",
+      "icon": "🔢",
+      "estimatedTime": { "value": 35, "unit": "hours", "note": "约12天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "industry-analysis",
+      "type": "phase",
+      "title": "行业分析",
+      "description": "行业研究框架、竞争格局、产业链分析",
+      "icon": "🏭",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "macro-economy",
+      "type": "phase",
+      "title": "宏观经济",
+      "description": "货币政策、财政政策、利率与汇率基础",
+      "icon": "🌐",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "research-report",
+      "type": "phase",
+      "title": "投资研究报告",
+      "description": "如何读研报、如何撰写投资分析报告",
+      "icon": "📝",
+      "estimatedTime": { "value": 20, "unit": "hours", "note": "约7天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "quant-basics",
+      "type": "phase",
+      "title": "量化分析入门",
+      "description": "Python 金融数据处理、Backtrader 回测基础",
+      "icon": "🤖",
+      "estimatedTime": { "value": 30, "unit": "hours", "note": "约10天" },
+      "resources": [
+        { "id": "far3", "title": "Python金融分析与量化交易", "type": "book", "isFree": false }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "finance-project",
+      "type": "phase",
+      "title": "综合项目",
+      "description": "完成一份完整的行业/公司分析报告",
+      "icon": "🚀",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    }
+  ],
+  "locale": "zh-CN",
+  "publishedAt": "2024-01-01T00:00:00Z",
+  "updatedAt": "2024-03-01T00:00:00Z",
+  "version": "1.0",
+  "suitableFor": ["想进入金融分析领域", "金融行业从业者", "经济/金融专业学生"],
+  "totalNodes": 8
+}

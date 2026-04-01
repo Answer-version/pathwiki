@@ -1,0 +1,42 @@
+[
+  {
+    "id": "tech",
+    "slug": "tech",
+    "name": "技术",
+    "nameEn": "Technology",
+    "icon": "💻",
+    "order": 1
+  },
+  {
+    "id": "product",
+    "slug": "product",
+    "name": "产品",
+    "nameEn": "Product",
+    "icon": "📦",
+    "order": 2
+  },
+  {
+    "id": "design",
+    "slug": "design",
+    "name": "设计",
+    "nameEn": "Design",
+    "icon": "🎨",
+    "order": 3
+  },
+  {
+    "id": "business",
+    "slug": "business",
+    "name": "商业",
+    "nameEn": "Business",
+    "icon": "💼",
+    "order": 4
+  },
+  {
+    "id": "growth",
+    "slug": "growth",
+    "name": "成长",
+    "nameEn": "Growth",
+    "icon": "🌱",
+    "order": 5
+  }
+]

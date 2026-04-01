@@ -1,0 +1,125 @@
+{
+  "id": "python-data-analysis",
+  "slug": "python-data-analysis",
+  "title": "Python数据分析",
+  "subtitle": "从Python基础到机器学习入门",
+  "category": {
+    "id": "tech",
+    "slug": "tech",
+    "name": "技术",
+    "nameEn": "Technology",
+    "icon": "💻",
+    "order": 1
+  },
+  "tags": ["Python", "Pandas", "NumPy", "数据可视化", "机器学习"],
+  "difficulty": "beginner",
+  "estimatedTime": {
+    "value": 200,
+    "unit": "hours",
+    "note": "每天学习3小时，约67天"
+  },
+  "description": "从 Python 基础到 Pandas/NumPy 数据处理，再到可视化与机器学习入门，形成完整数据分析能力。零基础，想用 Python 解决实际数据分析问题的学习者。",
+  "coverImage": {
+    "src": "/images/roadmaps/python-data.jpg",
+    "alt": "Python数据分析路线图"
+  },
+  "metadata": {
+    "metaTitle": "Python数据分析学习路线 | PathWiki",
+    "metaDescription": "零基础学习Python数据分析：Python基础/Pandas/NumPy/可视化/机器学习。200小时成就数据分析师。",
+    "keywords": ["Python", "数据分析", "Pandas", "NumPy", "数据可视化"]
+  },
+  "nodes": [
+    {
+      "id": "python-basics",
+      "type": "phase",
+      "title": "Python基础",
+      "description": "语法、数据类型、控制流、函数与模块",
+      "icon": "🐍",
+      "estimatedTime": { "value": 30, "unit": "hours", "note": "约10天" },
+      "resources": [
+        { "id": "pr1", "title": "Python Crash Course", "type": "book", "isFree": false, "author": "Eric Matthes" }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "numpy-pandas",
+      "type": "phase",
+      "title": "数据分析核心库",
+      "description": "NumPy（数组运算）、Pandas（数据清洗/分析）",
+      "icon": "📊",
+      "estimatedTime": { "value": 40, "unit": "hours", "note": "约13天" },
+      "resources": [
+        { "id": "pr2", "title": "利用Python进行数据分析", "type": "book", "isFree": false, "author": "Wes McKinney" }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "visualization",
+      "type": "phase",
+      "title": "数据可视化",
+      "description": "Matplotlib、Seaborn、Plotly，产出可发表级别的图表",
+      "icon": "📈",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "statistics",
+      "type": "phase",
+      "title": "统计分析基础",
+      "description": "描述性统计、假设检验、AB Test 理解",
+      "icon": "📉",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "sql",
+      "type": "phase",
+      "title": "数据库与SQL",
+      "description": "MySQL 查询、Python 数据库连接",
+      "icon": "🗄️",
+      "estimatedTime": { "value": 20, "unit": "hours", "note": "约7天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "excel-bi",
+      "type": "phase",
+      "title": "Excel/BI工具联动",
+      "description": "Python 与 BI 的互补应用场景",
+      "icon": "📋",
+      "estimatedTime": { "value": 15, "unit": "hours", "note": "约5天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "ml-intro",
+      "type": "phase",
+      "title": "机器学习入门",
+      "description": "Scikit-learn 基础算法、模型评估",
+      "icon": "🤖",
+      "estimatedTime": { "value": 30, "unit": "hours", "note": "约10天" },
+      "resources": [
+        { "id": "pr3", "title": "机器学习实战", "type": "book", "isFree": false }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "data-project",
+      "type": "phase",
+      "title": "项目实战",
+      "description": "完整数据分析报告（如电商用户行为分析/股票数据解读）",
+      "icon": "🚀",
+      "estimatedTime": { "value": 15, "unit": "hours", "note": "约5天" },
+      "resources": [],
+      "subNodes": []
+    }
+  ],
+  "locale": "zh-CN",
+  "publishedAt": "2024-01-01T00:00:00Z",
+  "updatedAt": "2024-03-01T00:00:00Z",
+  "version": "1.0",
+  "suitableFor": ["零基础想学数据分析", "运营/财务想提升数据能力", "转行者"],
+  "totalNodes": 8
+}

@@ -1,0 +1,207 @@
+{
+  "id": "frontend-dev",
+  "slug": "frontend-dev",
+  "title": "前端开发",
+  "subtitle": "从HTML/CSS到React/Vue框架",
+  "category": {
+    "id": "tech",
+    "slug": "tech",
+    "name": "技术",
+    "nameEn": "Technology",
+    "icon": "💻",
+    "order": 1
+  },
+  "tags": ["HTML", "CSS", "JavaScript", "React", "Vue", "前端"],
+  "difficulty": "beginner",
+  "estimatedTime": {
+    "value": 250,
+    "unit": "hours",
+    "note": "每天学习3.5小时，约72天"
+  },
+  "description": "从 HTML/CSS 基础到 React/Vue 框架，掌握工程化能力和主流开发生态。零基础，想进入互联网行业的前端开发者。",
+  "coverImage": {
+    "src": "/images/roadmaps/frontend.jpg",
+    "alt": "前端开发路线图"
+  },
+  "metadata": {
+    "metaTitle": "前端开发学习路线 | PathWiki",
+    "metaDescription": "零基础学习前端开发：HTML/CSS/JavaScript/React/Vue。250小时系统化路线，覆盖主流前端技术栈。",
+    "keywords": ["前端", "HTML", "CSS", "JavaScript", "React", "Vue"]
+  },
+  "nodes": [
+    {
+      "id": "html-css",
+      "type": "phase",
+      "title": "HTML/CSS基础",
+      "description": "语义化标签、CSS 布局（Flexbox/Grid）、响应式原理",
+      "icon": "🎨",
+      "estimatedTime": {
+        "value": 40,
+        "unit": "hours",
+        "note": "约11天"
+      },
+      "resources": [
+        {
+          "id": "fr1",
+          "title": "MDN Web Docs - HTML",
+          "type": "article",
+          "url": "https://developer.mozilla.org/zh-CN/docs/Learn/HTML",
+          "isFree": true,
+          "platform": "MDN"
+        },
+        {
+          "id": "fr2",
+          "title": "MDN Web Docs - CSS",
+          "type": "article",
+          "url": "https://developer.mozilla.org/zh-CN/docs/Learn/CSS",
+          "isFree": true,
+          "platform": "MDN"
+        }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "javascript-core",
+      "type": "phase",
+      "title": "JavaScript核心",
+      "description": "原型链、闭包、异步编程（Promise/async）、ES6+",
+      "icon": "⚡",
+      "estimatedTime": {
+        "value": 60,
+        "unit": "hours",
+        "note": "约17天"
+      },
+      "resources": [
+        {
+          "id": "fr3",
+          "title": "JavaScript高级程序设计",
+          "type": "book",
+          "isFree": false,
+          "author": "Nicholas C. Zakas"
+        },
+        {
+          "id": "fr4",
+          "title": "JavaScript权威指南",
+          "type": "book",
+          "isFree": false,
+          "author": "David Flanagan"
+        }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "dom-programming",
+      "type": "phase",
+      "title": "DOM编程",
+      "description": "事件模型、BOM 操作、性能优化基础",
+      "icon": "🖱️",
+      "estimatedTime": {
+        "value": 20,
+        "unit": "hours",
+        "note": "约6天"
+      },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "frontend-tooling",
+      "type": "phase",
+      "title": "前端工程化",
+      "description": "Vite/Webpack、npm/pnpm、Git",
+      "icon": "🔧",
+      "estimatedTime": {
+        "value": 25,
+        "unit": "hours",
+        "note": "约7天"
+      },
+      "resources": [
+        {
+          "id": "fr5",
+          "title": "Vite官方文档",
+          "type": "article",
+          "url": "https://cn.vitejs.dev/",
+          "isFree": true
+        }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "react",
+      "type": "phase",
+      "title": "React框架",
+      "description": "Hooks原理、状态管理（Redux/Zustand）、React Router",
+      "icon": "⚛️",
+      "estimatedTime": {
+        "value": 45,
+        "unit": "hours",
+        "note": "约13天"
+      },
+      "resources": [
+        {
+          "id": "fr6",
+          "title": "React官方文档",
+          "type": "article",
+          "url": "https://react.dev/",
+          "isFree": true
+        }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "vue",
+      "type": "phase",
+      "title": "Vue框架",
+      "description": "Composition API、Pinia、Vue Router（选学）",
+      "icon": "💚",
+      "estimatedTime": {
+        "value": 30,
+        "unit": "hours",
+        "note": "约9天"
+      },
+      "resources": [
+        {
+          "id": "fr7",
+          "title": "Vue官方文档",
+          "type": "article",
+          "url": "https://cn.vuejs.org/",
+          "isFree": true
+        }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "nodejs",
+      "type": "phase",
+      "title": "Node.js基础",
+      "description": "Express/Koa、NPM 包发布、接口开发",
+      "icon": "🟢",
+      "estimatedTime": {
+        "value": 20,
+        "unit": "hours",
+        "note": "约6天"
+      },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "frontend-project",
+      "type": "phase",
+      "title": "项目实战",
+      "description": "完整前端项目（如博客系统/管理后台）",
+      "icon": "🚀",
+      "estimatedTime": {
+        "value": 10,
+        "unit": "hours",
+        "note": "约3天"
+      },
+      "resources": [],
+      "subNodes": []
+    }
+  ],
+  "locale": "zh-CN",
+  "publishedAt": "2024-01-01T00:00:00Z",
+  "updatedAt": "2024-03-01T00:00:00Z",
+  "version": "1.0",
+  "suitableFor": ["零基础想进入IT行业", "对Web开发感兴趣", "转行者"],
+  "totalNodes": 8
+}

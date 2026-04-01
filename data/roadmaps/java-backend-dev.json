@@ -1,0 +1,224 @@
+{
+  "id": "java-backend-dev",
+  "slug": "java-backend-dev",
+  "title": "Java后端开发",
+  "subtitle": "从零基础到Spring Boot全栈能力",
+  "category": {
+    "id": "tech",
+    "slug": "tech",
+    "name": "技术",
+    "nameEn": "Technology",
+    "icon": "💻",
+    "order": 1
+  },
+  "tags": ["Java", "Spring Boot", "MySQL", "Redis", "微服务", "后端"],
+  "difficulty": "beginner",
+  "estimatedTime": {
+    "value": 300,
+    "unit": "hours",
+    "note": "每天学习4小时，约75天"
+  },
+  "description": "从 Java 基础语法到 Spring Boot 全栈能力，涵盖数据库、缓存、消息队列、容器化部署，对标 1-3 年经验工程师要求。零基础或初学者，以就业为导向。",
+  "coverImage": {
+    "src": "/images/roadmaps/java.jpg",
+    "alt": "Java后端开发路线图"
+  },
+  "metadata": {
+    "metaTitle": "Java后端开发学习路线 | PathWiki",
+    "metaDescription": "零基础学习Java后端开发：Java基础、数据库、微服务、Docker部署。300小时系统化路线，对标1-3年工程师要求。",
+    "keywords": ["Java", "Spring Boot", "后端开发", "MySQL", "微服务"]
+  },
+  "nodes": [
+    {
+      "id": "java-basics",
+      "type": "phase",
+      "title": "Java基础",
+      "description": "语法、面向对象、集合框架、异常处理",
+      "icon": "☕",
+      "estimatedTime": {
+        "value": 50,
+        "unit": "hours",
+        "note": "约12天"
+      },
+      "resources": [
+        {
+          "id": "jr1",
+          "title": "Java核心技术卷I",
+          "type": "book",
+          "isFree": false,
+          "author": "Cay S. Horstmann"
+        },
+        {
+          "id": "jr2",
+          "title": "韩顺平Java零基础入门",
+          "type": "video",
+          "isFree": true,
+          "platform": "B站",
+          "duration": "200h"
+        }
+      ],
+      "subNodes": [
+        {
+          "id": "java-basic-syntax",
+          "type": "lesson",
+          "title": "Java语法基础",
+          "description": "数据类型、运算符、流程控制",
+          "resources": []
+        },
+        {
+          "id": "java-oop",
+          "type": "lesson",
+          "title": "面向对象编程",
+          "description": "类、对象、继承、多态、接口",
+          "resources": []
+        },
+        {
+          "id": "java-collections",
+          "type": "lesson",
+          "title": "集合框架",
+          "description": "List、Set、Map及其实现类",
+          "resources": []
+        }
+      ]
+    },
+    {
+      "id": "java-web",
+      "type": "phase",
+      "title": "Java Web基础",
+      "description": "Servlet/JSP、HTTP 协议、Tomcat 部署",
+      "icon": "🌐",
+      "estimatedTime": {
+        "value": 30,
+        "unit": "hours",
+        "note": "约7天"
+      },
+      "resources": [
+        {
+          "id": "jr3",
+          "title": "深入理解JavaWeb",
+          "type": "book",
+          "isFree": false
+        }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "database",
+      "type": "phase",
+      "title": "数据库",
+      "description": "MySQL 核心（索引、事务、SQL 优化）、Redis 缓存",
+      "icon": "🗄️",
+      "estimatedTime": {
+        "value": 45,
+        "unit": "hours",
+        "note": "约11天"
+      },
+      "resources": [
+        {
+          "id": "jr4",
+          "title": "MySQL必知必会",
+          "type": "book",
+          "isFree": false
+        },
+        {
+          "id": "jr5",
+          "title": "Redis设计与实现",
+          "type": "book",
+          "isFree": false
+        }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "ssm-framework",
+      "type": "phase",
+      "title": "SSM框架",
+      "description": "Spring + Spring MVC + MyBatis",
+      "icon": "🔧",
+      "estimatedTime": {
+        "value": 50,
+        "unit": "hours",
+        "note": "约12天"
+      },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "springboot",
+      "type": "phase",
+      "title": "Spring Boot深度",
+      "description": "自动配置原理、微服务入门、Actuator 监控",
+      "icon": "🚀",
+      "estimatedTime": {
+        "value": 40,
+        "unit": "hours",
+        "note": "约10天"
+      },
+      "resources": [
+        {
+          "id": "jr6",
+          "title": "Spring Boot实战",
+          "type": "book",
+          "isFree": false,
+          "author": "Craig Walls"
+        }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "middleware",
+      "type": "phase",
+      "title": "中间件",
+      "description": "RabbitMQ/Kafka 消息队列、Elasticsearch 搜索引擎",
+      "icon": "⚙️",
+      "estimatedTime": {
+        "value": 40,
+        "unit": "hours",
+        "note": "约10天"
+      },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "devops",
+      "type": "phase",
+      "title": "DevOps基础",
+      "description": "Docker 容器化、Git CI/CD 基础、Linux 服务器操作",
+      "icon": "🐳",
+      "estimatedTime": {
+        "value": 25,
+        "unit": "hours",
+        "note": "约6天"
+      },
+      "resources": [
+        {
+          "id": "jr7",
+          "title": "Docker入门实战",
+          "type": "book",
+          "isFree": false
+        }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "java-project",
+      "type": "phase",
+      "title": "项目实战",
+      "description": "RESTful API 设计 + 完整业务系统（如电商后端）",
+      "icon": "🏗️",
+      "estimatedTime": {
+        "value": 20,
+        "unit": "hours",
+        "note": "约5天"
+      },
+      "resources": [],
+      "subNodes": []
+    }
+  ],
+  "locale": "zh-CN",
+  "publishedAt": "2024-01-01T00:00:00Z",
+  "updatedAt": "2024-03-01T00:00:00Z",
+  "version": "1.0",
+  "suitableFor": ["零基础想进入IT行业", "其他语言想转Java后端", "计算机专业学生"],
+  "totalNodes": 8
+}

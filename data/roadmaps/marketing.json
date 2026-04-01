@@ -1,0 +1,119 @@
+{
+  "id": "marketing",
+  "slug": "marketing",
+  "title": "市场营销",
+  "subtitle": "从营销理论到数字营销实战",
+  "category": {
+    "id": "business",
+    "slug": "business",
+    "name": "商业",
+    "nameEn": "Business",
+    "icon": "💼",
+    "order": 4
+  },
+  "tags": ["市场营销", "数字营销", "内容营销", "私域运营", "品牌"],
+  "difficulty": "beginner",
+  "estimatedTime": {
+    "value": 150,
+    "unit": "hours",
+    "note": "每天学习2.5小时，约60天"
+  },
+  "description": "从营销基础理论到数字营销实战，覆盖品牌、渠道、内容、投放全链路。想系统学习市场营销方法的创业者、在职营销人、转行者。",
+  "coverImage": {
+    "src": "/images/roadmaps/marketing.jpg",
+    "alt": "市场营销路线图"
+  },
+  "metadata": {
+    "metaTitle": "市场营销学习路线 | PathWiki",
+    "metaDescription": "系统学习市场营销：4P框架/内容营销/社交媒体/付费投放/私域运营。150小时覆盖全链路营销技能。",
+    "keywords": ["市场营销", "数字营销", "内容营销", "私域运营", "品牌建设"]
+  },
+  "nodes": [
+    {
+      "id": "marketing-basics",
+      "type": "phase",
+      "title": "营销基础理论",
+      "description": "4P/4C框架、STP定位、用户画像",
+      "icon": "📚",
+      "estimatedTime": { "value": 20, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "content-marketing",
+      "type": "phase",
+      "title": "内容营销",
+      "description": "内容策略、选题策划、文案写作、SEO基础",
+      "icon": "✍️",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约10天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "social-media",
+      "type": "phase",
+      "title": "社交媒体营销",
+      "description": "微博/抖音/小红书平台特性与运营方法",
+      "icon": "📱",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约10天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "paid-ads",
+      "type": "phase",
+      "title": "付费投放",
+      "description": "信息流广告（巨量引擎/腾讯广告）、SEM/竞价",
+      "icon": "💰",
+      "estimatedTime": { "value": 20, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "marketing-data",
+      "type": "phase",
+      "title": "数据分析",
+      "description": "营销漏斗、ROI计算、广告数据归因",
+      "icon": "📊",
+      "estimatedTime": { "value": 20, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "private-traffic",
+      "type": "phase",
+      "title": "私域运营",
+      "description": "微信生态（公众号/视频号/小程序）、社群运营",
+      "icon": "👥",
+      "estimatedTime": { "value": 20, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "branding",
+      "type": "phase",
+      "title": "品牌建设",
+      "description": "品牌定位、品牌故事、舆情管理",
+      "icon": "🏷️",
+      "estimatedTime": { "value": 10, "unit": "hours", "note": "约4天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "marketing-project",
+      "type": "phase",
+      "title": "整合营销项目",
+      "description": "从策略到落地，完成一个完整营销Campaign",
+      "icon": "🚀",
+      "estimatedTime": { "value": 10, "unit": "hours", "note": "约4天" },
+      "resources": [],
+      "subNodes": []
+    }
+  ],
+  "locale": "zh-CN",
+  "publishedAt": "2024-01-01T00:00:00Z",
+  "updatedAt": "2024-03-01T00:00:00Z",
+  "version": "1.0",
+  "suitableFor": ["想系统学习市场营销", "创业者", "在职营销人", "转行者"],
+  "totalNodes": 8
+}

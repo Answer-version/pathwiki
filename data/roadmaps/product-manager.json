@@ -1,0 +1,121 @@
+{
+  "id": "product-manager",
+  "slug": "product-manager",
+  "title": "产品经理",
+  "subtitle": "从产品思维到数据分析",
+  "category": {
+    "id": "product",
+    "slug": "product",
+    "name": "产品",
+    "nameEn": "Product",
+    "icon": "📦",
+    "order": 2
+  },
+  "tags": ["产品经理", "PRD", "Axure", "数据分析", "需求分析"],
+  "difficulty": "beginner",
+  "estimatedTime": {
+    "value": 180,
+    "unit": "hours",
+    "note": "每天学习3小时，约60天"
+  },
+  "description": "从产品思维入门到需求分析、原型设计、数据分析，覆盖 B 端/C 端产品经理核心技能。想入行产品经理，或刚入行需要系统化方法论的从业者。",
+  "coverImage": {
+    "src": "/images/roadmaps/pm.jpg",
+    "alt": "产品经理路线图"
+  },
+  "metadata": {
+    "metaTitle": "产品经理学习路线 | PathWiki",
+    "metaDescription": "零基础学习产品经理：产品思维/需求分析/原型设计/数据分析。180小时系统化路线，覆盖产品经理核心技能。",
+    "keywords": ["产品经理", "PRD", "Axure", "Figma", "需求分析"]
+  },
+  "nodes": [
+    {
+      "id": "pm-cognition",
+      "type": "phase",
+      "title": "产品经理认知",
+      "description": "角色定位、工作流程、与研发/设计的协作关系",
+      "icon": "💡",
+      "estimatedTime": { "value": 15, "unit": "hours", "note": "约5天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "requirement",
+      "type": "phase",
+      "title": "需求挖掘",
+      "description": "用户访谈、问卷设计、需求采集方法",
+      "icon": "🔍",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "competitor",
+      "type": "phase",
+      "title": "竞品分析",
+      "description": "分析框架（SWOT/波特五力）、体验拆解方法",
+      "icon": "🧐",
+      "estimatedTime": { "value": 20, "unit": "hours", "note": "约7天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "prd",
+      "type": "phase",
+      "title": "PRD文档写作",
+      "description": "功能规则、流程图、状态机、字段定义",
+      "icon": "📝",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "prototype",
+      "type": "phase",
+      "title": "原型设计",
+      "description": "Axure/Figma 操作、低保真原型绘制、设计评审",
+      "icon": "🎨",
+      "estimatedTime": { "value": 30, "unit": "hours", "note": "约10天" },
+      "resources": [
+        { "id": "pmr1", "title": "Figma官方教程", "type": "course", "isFree": true, "platform": "Figma" }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "data-analysis",
+      "type": "phase",
+      "title": "数据分析基础",
+      "description": "指标体系搭建（DAU/留存/转化）、SQL 基础",
+      "icon": "📊",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "project-management",
+      "type": "phase",
+      "title": "项目管理",
+      "description": "敏捷开发（Scrum）、需求优先级（Kano/RICE）",
+      "icon": "📋",
+      "estimatedTime": { "value": 20, "unit": "hours", "note": "约7天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "industry-track",
+      "type": "phase",
+      "title": "行业专项",
+      "description": "C端增长/B端SaaS/AI产品（选一个方向深耕）",
+      "icon": "🎯",
+      "estimatedTime": { "value": 20, "unit": "hours", "note": "约7天" },
+      "resources": [],
+      "subNodes": []
+    }
+  ],
+  "locale": "zh-CN",
+  "publishedAt": "2024-01-01T00:00:00Z",
+  "updatedAt": "2024-03-01T00:00:00Z",
+  "version": "1.0",
+  "suitableFor": ["想转行做产品经理", "刚入行的产品新人", "想系统化方法论的从业者"],
+  "totalNodes": 8
+}

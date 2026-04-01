@@ -1,0 +1,123 @@
+{
+  "id": "ui-designer",
+  "slug": "ui-designer",
+  "title": "UI设计师",
+  "subtitle": "从设计基础到作品集构建",
+  "category": {
+    "id": "design",
+    "slug": "design",
+    "name": "设计",
+    "nameEn": "Design",
+    "icon": "🎨",
+    "order": 3
+  },
+  "tags": ["UI设计", "Figma", "设计系统", "作品集", "UX"],
+  "difficulty": "beginner",
+  "estimatedTime": {
+    "value": 200,
+    "unit": "hours",
+    "note": "每天学习3小时，约67天"
+  },
+  "description": "从设计基础（配色/排版）到 Figma 工具精通，再到作品集打造，匹配市场岗位要求。想进入 UI/UX 设计领域的零基础学习者。",
+  "coverImage": {
+    "src": "/images/roadmaps/ui.jpg",
+    "alt": "UI设计师路线图"
+  },
+  "metadata": {
+    "metaTitle": "UI设计师学习路线 | PathWiki",
+    "metaDescription": "零基础学习UI设计：设计基础/Figma/交互设计/作品集。200小时系统化路线，匹配市场岗位要求。",
+    "keywords": ["UI设计", "Figma", "设计系统", "交互设计", "UX"]
+  },
+  "nodes": [
+    {
+      "id": "design-basics",
+      "type": "phase",
+      "title": "设计基础理论",
+      "description": "配色原理、字体学、排版网格、视觉层次",
+      "icon": "🎨",
+      "estimatedTime": { "value": 30, "unit": "hours", "note": "约10天" },
+      "resources": [
+        { "id": "uir1", "title": "设计基础理论", "type": "course", "isFree": false, "platform": "站酷" }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "figma-basics",
+      "type": "phase",
+      "title": "设计工具入门",
+      "description": "Figma 核心操作（组件/自动布局/原型）",
+      "icon": "🔧",
+      "estimatedTime": { "value": 35, "unit": "hours", "note": "约12天" },
+      "resources": [
+        { "id": "uir2", "title": "Figma官方教程", "type": "course", "isFree": true, "platform": "Figma" }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "icon-illustration",
+      "type": "phase",
+      "title": "图标与插画",
+      "description": "图标绘制规范、手绘插画基础",
+      "icon": "✏️",
+      "estimatedTime": { "value": 20, "unit": "hours", "note": "约7天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "design-guidelines",
+      "type": "phase",
+      "title": "平台设计规范",
+      "description": "iOS Human Interface Guidelines、Android Material Design",
+      "icon": "📱",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "interaction-basics",
+      "type": "phase",
+      "title": "交互设计基础",
+      "description": "交互原型、过渡动画、设计系统概念",
+      "icon": "🔄",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "ui-practice",
+      "type": "phase",
+      "title": "UI设计实战",
+      "description": "从需求到高保真原型（电商/App/后台）",
+      "icon": "💼",
+      "estimatedTime": { "value": 30, "unit": "hours", "note": "约10天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "design-delivery",
+      "type": "phase",
+      "title": "设计交付",
+      "description": "标注导出、切图命名规范、与开发协作",
+      "icon": "📦",
+      "estimatedTime": { "value": 15, "unit": "hours", "note": "约5天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "portfolio",
+      "type": "phase",
+      "title": "作品集构建",
+      "description": "Dribbble/Behance 展示、面试作品集包装",
+      "icon": "📁",
+      "estimatedTime": { "value": 20, "unit": "hours", "note": "约7天" },
+      "resources": [],
+      "subNodes": []
+    }
+  ],
+  "locale": "zh-CN",
+  "publishedAt": "2024-01-01T00:00:00Z",
+  "updatedAt": "2024-03-01T00:00:00Z",
+  "version": "1.0",
+  "suitableFor": ["想进入UI/UX设计领域", "对视觉设计感兴趣", "转行者"],
+  "totalNodes": 8
+}

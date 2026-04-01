@@ -1,0 +1,123 @@
+{
+  "id": "english-learning",
+  "slug": "english-learning",
+  "title": "英语学习",
+  "subtitle": "结构化英语能力提升路线",
+  "category": {
+    "id": "growth",
+    "slug": "growth",
+    "name": "成长",
+    "nameEn": "Growth",
+    "icon": "🌱",
+    "order": 5
+  },
+  "tags": ["英语", "口语", "听力", "写作", "雅思", "托福"],
+  "difficulty": "beginner",
+  "estimatedTime": {
+    "value": 300,
+    "unit": "hours",
+    "note": "每天学习2小时，约150天（可持续学习）"
+  },
+  "description": "不同于碎片化背单词，提供一套从基础到流利的结构化学习路径，强调输入（听读）与输出（说写）的平衡。提供「日常口语」「学术英语」「商务英语」三个方向。",
+  "coverImage": {
+    "src": "/images/roadmaps/english.jpg",
+    "alt": "英语学习路线图"
+  },
+  "metadata": {
+    "metaTitle": "英语学习路线 | PathWiki",
+    "metaDescription": "系统化英语学习：发音/词汇/听力/阅读/口语/写作。300小时结构化路线，告别碎片化学习。",
+    "keywords": ["英语学习", "口语", "听力", "写作", "雅思", "托福"]
+  },
+  "nodes": [
+    {
+      "id": "pronunciation",
+      "type": "phase",
+      "title": "发音与音标",
+      "description": "IPA音标、连读弱读、语调基础",
+      "icon": "🔊",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约12天" },
+      "resources": [
+        { "id": "elr1", "title": "Rachel's English", "type": "video", "isFree": true, "platform": "YouTube" }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "vocabulary",
+      "type": "phase",
+      "title": "词汇积累方法",
+      "description": "词根词缀、语境记忆、Anki间隔重复使用",
+      "icon": "📖",
+      "estimatedTime": { "value": 30, "unit": "hours", "note": "约15天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "listening",
+      "type": "phase",
+      "title": "听力训练",
+      "description": "从 ESLLPod 到 Podcasts 进阶路线、无字幕听力技巧",
+      "icon": "🎧",
+      "estimatedTime": { "value": 40, "unit": "hours", "note": "约20天" },
+      "resources": [
+        { "id": "elr2", "title": "ESLPod", "type": "course", "isFree": false }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "reading",
+      "type": "phase",
+      "title": "阅读能力",
+      "description": "精读 vs 泛读、学术阅读技巧",
+      "icon": "📚",
+      "estimatedTime": { "value": 35, "unit": "hours", "note": "约17天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "speaking",
+      "type": "phase",
+      "title": "口语表达",
+      "description": "Shadowing影子跟读法、话题卡练习、LangCorrect互评",
+      "icon": "🗣️",
+      "estimatedTime": { "value": 50, "unit": "hours", "note": "约25天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "writing",
+      "type": "phase",
+      "title": "写作提升",
+      "description": "句子结构、段落组织、学术/商务写作格式",
+      "icon": "✍️",
+      "estimatedTime": { "value": 40, "unit": "hours", "note": "约20天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "specialized-track",
+      "type": "phase",
+      "title": "方向专项（选一）",
+      "description": "日常口语：旅游/社交场景 | 学术英语：论文阅读/学术写作 | 商务英语：邮件/会议/谈判",
+      "icon": "🎯",
+      "estimatedTime": { "value": 50, "unit": "hours", "note": "约25天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "sustainability",
+      "type": "phase",
+      "title": "持续输入计划",
+      "description": "如何建立可持续的英语接触习惯",
+      "icon": "♻️",
+      "estimatedTime": { "value": 30, "unit": "hours", "note": "约15天" },
+      "resources": [],
+      "subNodes": []
+    }
+  ],
+  "locale": "zh-CN",
+  "publishedAt": "2024-01-01T00:00:00Z",
+  "updatedAt": "2024-03-01T00:00:00Z",
+  "version": "1.0",
+  "suitableFor": ["想系统提升英语能力", "备考雅思/托福", "职场英语需求"],
+  "totalNodes": 8
+}

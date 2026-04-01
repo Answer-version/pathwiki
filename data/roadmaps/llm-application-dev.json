@@ -1,0 +1,246 @@
+{
+  "id": "llm-application-dev",
+  "slug": "llm-application-dev",
+  "title": "大模型应用开发",
+  "subtitle": "从 Prompt 工程到 Agent 开发",
+  "category": {
+    "id": "tech",
+    "slug": "tech",
+    "name": "技术",
+    "nameEn": "Technology",
+    "icon": "💻",
+    "order": 1
+  },
+  "tags": ["AI", "LLM", "Prompt", "LangChain", "RAG", "Agent"],
+  "difficulty": "intermediate",
+  "estimatedTime": {
+    "value": 120,
+    "unit": "hours",
+    "note": "每天学习3小时，约40天"
+  },
+  "description": "从 LLM 基础概念出发，涵盖 Prompt 工程、主流 API 调用、RAG 架构、Agent 开发，最终完成一个完整的 AI 应用项目。适合有编程基础，想快速掌握 LLM 应用开发能力的开发者。",
+  "coverImage": {
+    "src": "/images/roadmaps/llm.jpg",
+    "alt": "大模型应用开发路线图"
+  },
+  "metadata": {
+    "metaTitle": "大模型应用开发学习路线 | PathWiki",
+    "metaDescription": "从零掌握大模型应用开发：Prompt工程、API调用、RAG架构、Agent开发。系统化学习路径，120小时成就AI应用开发能力。",
+    "keywords": ["大模型", "LLM", "Prompt工程", "RAG", "LangChain", "AI开发"]
+  },
+  "nodes": [
+    {
+      "id": "llm-basics",
+      "type": "phase",
+      "title": "LLM 基础概念",
+      "description": "了解 GPT/LLaMA/Claude 等模型原理、能力边界、Token 概念",
+      "icon": "🧠",
+      "estimatedTime": {
+        "value": 15,
+        "unit": "hours",
+        "note": "约5天"
+      },
+      "resources": [
+        {
+          "id": "r1",
+          "title": "ChatGPT背后的大模型原理",
+          "type": "article",
+          "url": "https://example.com/llm-basics",
+          "isFree": true,
+          "description": "通俗易懂的大模型原理科普文章",
+          "platform": "微信公众号"
+        },
+        {
+          "id": "r2",
+          "title": "OpenAI官方文档 - API基础",
+          "type": "article",
+          "url": "https://platform.openai.com/docs",
+          "isFree": true,
+          "description": "OpenAI官方API文档",
+          "platform": "OpenAI"
+        }
+      ],
+      "subNodes": [
+        {
+          "id": "llm-basics-token",
+          "type": "lesson",
+          "title": "Token 与文本处理",
+          "description": "理解Token概念，学会计算Token数量",
+          "resources": [
+            {
+              "id": "r3",
+              "title": "Token计算器",
+              "type": "tool",
+              "url": "https://platform.openai.com/tokenizer",
+              "isFree": true,
+              "platform": "OpenAI"
+            }
+          ]
+        },
+        {
+          "id": "llm-basics-capability",
+          "type": "lesson",
+          "title": "模型能力边界",
+          "description": "了解各模型的擅长领域与局限",
+          "resources": [
+            {
+              "id": "r4",
+              "title": "GPT-4 vs Claude vs LLaMA对比",
+              "type": "article",
+              "isFree": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prompt-engineering",
+      "type": "phase",
+      "title": "Prompt 工程",
+      "description": "编写高效 Prompt、结构化输出、Few-shot 技巧",
+      "icon": "✍️",
+      "estimatedTime": {
+        "value": 20,
+        "unit": "hours",
+        "note": "约7天"
+      },
+      "resources": [
+        {
+          "id": "r5",
+          "title": "Prompt Engineering Guide",
+          "type": "course",
+          "url": "https://prompt engineeringguide.com",
+          "isFree": true,
+          "platform": "DeepLearning.AI"
+        },
+        {
+          "id": "r6",
+          "title": "结构化输出指南",
+          "type": "article",
+          "url": "https://platform.openai.com/docs/guides/structured-outputs",
+          "isFree": true,
+          "platform": "OpenAI"
+        }
+      ],
+      "subNodes": [
+        {
+          "id": "prompt-basics",
+          "type": "lesson",
+          "title": "基础 Prompt 技巧",
+          "description": "角色设定、任务描述、输出格式",
+          "resources": []
+        },
+        {
+          "id": "prompt-advanced",
+          "type": "lesson",
+          "title": "Few-shot 与 CoT",
+          "description": "少样本提示与思维链技术",
+          "resources": []
+        }
+      ]
+    },
+    {
+      "id": "api-integration",
+      "type": "phase",
+      "title": "API 接入实战",
+      "description": "OpenAI API / Claude API / 国内模型（文心/通义）调用",
+      "icon": "🔌",
+      "estimatedTime": {
+        "value": 15,
+        "unit": "hours",
+        "note": "约5天"
+      },
+      "resources": [
+        {
+          "id": "r7",
+          "title": "Python调用OpenAI API实战",
+          "type": "video",
+          "isFree": true,
+          "platform": "B站",
+          "duration": "2h"
+        }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "rag",
+      "type": "phase",
+      "title": "RAG 检索增强生成",
+      "description": "文档切分、向量数据库、Embedding 实战",
+      "icon": "📚",
+      "estimatedTime": {
+        "value": 25,
+        "unit": "hours",
+        "note": "约8天"
+      },
+      "resources": [
+        {
+          "id": "r8",
+          "title": "RAG系统构建指南",
+          "type": "course",
+          "isFree": false,
+          "platform": "LangChain Academy",
+          "duration": "8h"
+        }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "agent-development",
+      "type": "phase",
+      "title": "Agent 开发",
+      "description": "工具调用、Multi-Agent 协作框架（LangChain / Coze）",
+      "icon": "🤖",
+      "estimatedTime": {
+        "value": 25,
+        "unit": "hours",
+        "note": "约8天"
+      },
+      "resources": [
+        {
+          "id": "r9",
+          "title": "LangChain Agents教程",
+          "type": "course",
+          "url": "https://python.langchain.com/docs/tutorials/",
+          "isFree": true
+        },
+        {
+          "id": "r10",
+          "title": "Coze平台入门",
+          "type": "article",
+          "isFree": true,
+          "platform": "Coze"
+        }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "final-project",
+      "type": "phase",
+      "title": "项目实战",
+      "description": "从 0 到 1 完成一个完整 AI 应用（如智能客服 / 知识库问答）",
+      "icon": "🚀",
+      "estimatedTime": {
+        "value": 20,
+        "unit": "hours",
+        "note": "约7天"
+      },
+      "resources": [
+        {
+          "id": "r11",
+          "title": "企业级RAG系统实战",
+          "type": "project",
+          "isFree": false,
+          "duration": "10h"
+        }
+      ],
+      "subNodes": []
+    }
+  ],
+  "locale": "zh-CN",
+  "publishedAt": "2024-01-01T00:00:00Z",
+  "updatedAt": "2024-03-01T00:00:00Z",
+  "version": "1.0",
+  "suitableFor": ["有编程基础的开发者", "想转型AI方向的工程师", "对LLM应用感兴趣的产品经理"],
+  "totalNodes": 6
+}

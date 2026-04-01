@@ -1,0 +1,121 @@
+{
+  "id": "psychology-counselor",
+  "slug": "psychology-counselor",
+  "title": "心理咨询师",
+  "subtitle": "从心理学基础到咨询技术入门",
+  "category": {
+    "id": "growth",
+    "slug": "growth",
+    "name": "成长",
+    "nameEn": "Growth",
+    "icon": "🌱",
+    "order": 5
+  },
+  "tags": ["心理学", "心理咨询", "CBT", "心理健康"],
+  "difficulty": "beginner",
+  "estimatedTime": {
+    "value": 200,
+    "unit": "hours",
+    "note": "每天学习3小时，约67天"
+  },
+  "description": "从心理学基础理论到咨询技术入门，建立助人自助的知识框架，为后续深入学习或考证打下基础。对心理学感兴趣，想了解心理咨询行业，或打算系统学习心理学知识的人。",
+  "coverImage": {
+    "src": "/images/roadmaps/psychology.jpg",
+    "alt": "心理咨询师路线图"
+  },
+  "metadata": {
+    "metaTitle": "心理咨询师学习路线 | PathWiki",
+    "metaDescription": "系统学习心理咨询：普通心理学/发展心理学/咨询理论/咨询技术。200小时建立助人自助的知识框架。",
+    "keywords": ["心理学", "心理咨询", "CBT", "心理健康", "认知行为"]
+  },
+  "nodes": [
+    {
+      "id": "psychology-basics",
+      "type": "phase",
+      "title": "心理学基础",
+      "description": "普通心理学（认知/情感/意志/人格）",
+      "icon": "🧠",
+      "estimatedTime": { "value": 30, "unit": "hours", "note": "约10天" },
+      "resources": [
+        { "id": "pcr1", "title": "普通心理学", "type": "book", "isFree": false, "author": "彭聃龄" }
+      ],
+      "subNodes": []
+    },
+    {
+      "id": "developmental-psychology",
+      "type": "phase",
+      "title": "发展心理学",
+      "description": "各年龄段心理特征（婴幼儿/儿童/青少年/成年/老年）",
+      "icon": "👶",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "social-psychology",
+      "type": "phase",
+      "title": "社会心理学",
+      "description": "从众、服从、社会认知、人际关系",
+      "icon": "👥",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "abnormal-psychology",
+      "type": "phase",
+      "title": "异常心理学",
+      "description": "常见心理障碍识别（抑郁/焦虑/恐惧等）",
+      "icon": "⚠️",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "counseling-theory",
+      "type": "phase",
+      "title": "心理咨询理论",
+      "description": "CBT认知行为、动力学、存在主义等主要流派",
+      "icon": "💭",
+      "estimatedTime": { "value": 30, "unit": "hours", "note": "约10天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "counseling-skills",
+      "type": "phase",
+      "title": "咨询技术",
+      "description": "倾听、共情、提问、情绪处理技术",
+      "icon": "🤝",
+      "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "psychological-assessment",
+      "type": "phase",
+      "title": "心理评估",
+      "description": "常用量表（SCL-90/MBTI/SDS）的使用与解读",
+      "icon": "📋",
+      "estimatedTime": { "value": 20, "unit": "hours", "note": "约7天" },
+      "resources": [],
+      "subNodes": []
+    },
+    {
+      "id": "ethics",
+      "type": "phase",
+      "title": "伦理与界限",
+      "description": "心理咨询伦理规范、自我保护与转介",
+      "icon": "⚖️",
+      "estimatedTime": { "value": 20, "unit": "hours", "note": "约7天" },
+      "resources": [],
+      "subNodes": []
+    }
+  ],
+  "locale": "zh-CN",
+  "publishedAt": "2024-01-01T00:00:00Z",
+  "updatedAt": "2024-03-01T00:00:00Z",
+  "version": "1.0",
+  "suitableFor": ["对心理学感兴趣", "想了解心理咨询行业", "打算系统学习心理学知识"],
+  "totalNodes": 8
+}
