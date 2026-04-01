@@ -33,7 +33,8 @@
       "id": "html-css",
       "type": "phase",
       "title": "HTML/CSS基础",
-      "description": "语义化标签、CSS 布局（Flexbox/Grid）、响应式原理",
+      "difficulty": "beginner",
+      "description": "语义化标签、CSS 布局（Flexbox/Grid）、响应式原理、现代CSS特性",
       "icon": "🎨",
       "estimatedTime": {
         "value": 40,
@@ -47,7 +48,9 @@
           "type": "article",
           "url": "https://developer.mozilla.org/zh-CN/docs/Learn/HTML",
           "isFree": true,
-          "platform": "MDN"
+          "platform": "MDN",
+          "duration": "8小时",
+          "rating": 5
         },
         {
           "id": "fr2",
@@ -55,16 +58,45 @@
           "type": "article",
           "url": "https://developer.mozilla.org/zh-CN/docs/Learn/CSS",
           "isFree": true,
-          "platform": "MDN"
+          "platform": "MDN",
+          "duration": "10小时",
+          "rating": 5
+        },
+        {
+          "id": "fr1b",
+          "title": "Flexbox Froggy",
+          "type": "exercise",
+          "url": "https://flexboxfroggy.com/#zh-cn",
+          "isFree": true,
+          "platform": "Flexbox Froggy",
+          "duration": "2小时",
+          "rating": 4
+        },
+        {
+          "id": "fr1c",
+          "title": "CSS Grid Garden",
+          "type": "exercise",
+          "url": "https://cssgridgarden.com/#zh-cn",
+          "isFree": true,
+          "platform": "CSS Grid Garden",
+          "duration": "1小时",
+          "rating": 4
         }
       ],
-      "subNodes": []
+      "subNodes": [
+        { "id": "html-basics", "title": "HTML基础语法", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "css-basics", "title": "CSS选择器与属性", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "flexbox", "title": "Flexbox布局", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "grid", "title": "Grid布局", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "responsive", "title": "响应式设计", "estimatedTime": { "value": 8, "unit": "hours" } }
+      ]
     },
     {
       "id": "javascript-core",
       "type": "phase",
       "title": "JavaScript核心",
-      "description": "原型链、闭包、异步编程（Promise/async）、ES6+",
+      "difficulty": "intermediate",
+      "description": "原型链、闭包、异步编程（Promise/async）、ES6+新特性",
       "icon": "⚡",
       "estimatedTime": {
         "value": 60,
@@ -77,37 +109,95 @@
           "title": "JavaScript高级程序设计",
           "type": "book",
           "isFree": false,
-          "author": "Nicholas C. Zakas"
+          "author": "Nicholas C. Zakas",
+          "platform": "人民邮电出版社",
+          "rating": 5
         },
         {
           "id": "fr4",
           "title": "JavaScript权威指南",
           "type": "book",
           "isFree": false,
-          "author": "David Flanagan"
+          "author": "David Flanagan",
+          "platform": "机械工业出版社",
+          "rating": 5
+        },
+        {
+          "id": "fr3b",
+          "title": "JavaScript 30天挑战",
+          "type": "project",
+          "url": "https://javascript30.com/",
+          "isFree": true,
+          "platform": "JavaScript30",
+          "duration": "30小时",
+          "rating": 5
+        },
+        {
+          "id": "fr4b",
+          "title": "ES6入门教程",
+          "type": "article",
+          "url": "https://es6.ruanyifeng.com/",
+          "isFree": true,
+          "platform": "阮一峰",
+          "duration": "6小时",
+          "rating": 4
         }
       ],
-      "subNodes": []
+      "subNodes": [
+        { "id": "js-basics", "title": "数据类型与运算符", "estimatedTime": { "value": 10, "unit": "hours" } },
+        { "id": "js-functions", "title": "函数与作用域", "estimatedTime": { "value": 10, "unit": "hours" } },
+        { "id": "js-async", "title": "异步编程", "estimatedTime": { "value": 15, "unit": "hours" } },
+        { "id": "js-es6", "title": "ES6+新特性", "estimatedTime": { "value": 15, "unit": "hours" } },
+        { "id": "js-oop", "title": "面向对象", "estimatedTime": { "value": 10, "unit": "hours" } }
+      ]
     },
     {
       "id": "dom-programming",
       "type": "phase",
       "title": "DOM编程",
-      "description": "事件模型、BOM 操作、性能优化基础",
+      "difficulty": "intermediate",
+      "description": "事件模型、BOM操作、DOM操作、性能优化基础",
       "icon": "🖱️",
       "estimatedTime": {
         "value": 20,
         "unit": "hours",
         "note": "约6天"
       },
-      "resources": [],
-      "subNodes": []
+      "resources": [
+        {
+          "id": "fr5a",
+          "title": "DOM Manipulation",
+          "type": "course",
+          "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+          "isFree": true,
+          "platform": "freeCodeCamp",
+          "duration": "10小时",
+          "rating": 4
+        },
+        {
+          "id": "fr5b",
+          "title": "JavaScript事件委托",
+          "type": "article",
+          "url": "https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Building_blocks/Events",
+          "isFree": true,
+          "platform": "MDN",
+          "duration": "2小时",
+          "rating": 5
+        }
+      ],
+      "subNodes": [
+        { "id": "dom-select", "title": "DOM选择器", "estimatedTime": { "value": 4, "unit": "hours" } },
+        { "id": "dom-event", "title": "事件处理", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "dom-traversal", "title": "DOM遍历", "estimatedTime": { "value": 4, "unit": "hours" } },
+        { "id": "dom-perf", "title": "性能优化", "estimatedTime": { "value": 4, "unit": "hours" } }
+      ]
     },
     {
       "id": "frontend-tooling",
       "type": "phase",
       "title": "前端工程化",
-      "description": "Vite/Webpack、npm/pnpm、Git",
+      "difficulty": "intermediate",
+      "description": "Vite/Webpack、npm/pnpm、Git、ESLint、Prettier",
       "icon": "🔧",
       "estimatedTime": {
         "value": 25,
@@ -116,20 +206,48 @@
       },
       "resources": [
         {
-          "id": "fr5",
+          "id": "fr6",
           "title": "Vite官方文档",
           "type": "article",
           "url": "https://cn.vitejs.dev/",
-          "isFree": true
+          "isFree": true,
+          "platform": "Vite",
+          "duration": "3小时",
+          "rating": 5
+        },
+        {
+          "id": "fr6b",
+          "title": "Git权威指南",
+          "type": "book",
+          "isFree": false,
+          "author": "Scott Chacon",
+          "platform": "电子工业出版社",
+          "rating": 5
+        },
+        {
+          "id": "fr6c",
+          "title": "Git教程",
+          "type": "video",
+          "url": "https://www.bilibili.com/video/BV1pW411A7a8",
+          "isFree": true,
+          "platform": "Bilibili",
+          "duration": "4小时",
+          "rating": 4
         }
       ],
-      "subNodes": []
+      "subNodes": [
+        { "id": "tool-git", "title": "Git版本控制", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "tool-npm", "title": "npm/pnpm包管理", "estimatedTime": { "value": 4, "unit": "hours" } },
+        { "id": "tool-vite", "title": "Vite构建工具", "estimatedTime": { "value": 6, "unit": "hours" } },
+        { "id": "tool-lint", "title": "代码规范", "estimatedTime": { "value": 7, "unit": "hours" } }
+      ]
     },
     {
       "id": "react",
       "type": "phase",
       "title": "React框架",
-      "description": "Hooks原理、状态管理（Redux/Zustand）、React Router",
+      "difficulty": "intermediate",
+      "description": "Hooks原理、状态管理（Redux/Zustand）、React Router、性能优化",
       "icon": "⚛️",
       "estimatedTime": {
         "value": 45,
@@ -138,19 +256,49 @@
       },
       "resources": [
         {
-          "id": "fr6",
+          "id": "fr7",
           "title": "React官方文档",
           "type": "article",
           "url": "https://react.dev/",
-          "isFree": true
+          "isFree": true,
+          "platform": "React",
+          "duration": "8小时",
+          "rating": 5
+        },
+        {
+          "id": "fr7b",
+          "title": "React实战",
+          "type": "course",
+          "url": "https://www.bilibili.com/video/BV1pW411A7a8",
+          "isFree": true,
+          "platform": "Bilibili",
+          "duration": "20小时",
+          "rating": 4
+        },
+        {
+          "id": "fr7c",
+          "title": "Redux Toolkit",
+          "type": "article",
+          "url": "https://redux-toolkit.js.org/",
+          "isFree": true,
+          "platform": "Redux",
+          "duration": "4小时",
+          "rating": 4
         }
       ],
-      "subNodes": []
+      "subNodes": [
+        { "id": "react-basics", "title": "React基础", "estimatedTime": { "value": 10, "unit": "hours" } },
+        { "id": "react-hooks", "title": "Hooks", "estimatedTime": { "value": 12, "unit": "hours" } },
+        { "id": "react-router", "title": "路由", "estimatedTime": { "value": 6, "unit": "hours" } },
+        { "id": "react-state", "title": "状态管理", "estimatedTime": { "value": 10, "unit": "hours" } },
+        { "id": "react-perf", "title": "性能优化", "estimatedTime": { "value": 7, "unit": "hours" } }
+      ]
     },
     {
       "id": "vue",
       "type": "phase",
       "title": "Vue框架",
+      "difficulty": "intermediate",
       "description": "Composition API、Pinia、Vue Router（选学）",
       "icon": "💚",
       "estimatedTime": {
@@ -160,42 +308,100 @@
       },
       "resources": [
         {
-          "id": "fr7",
+          "id": "fr8",
           "title": "Vue官方文档",
           "type": "article",
           "url": "https://cn.vuejs.org/",
-          "isFree": true
+          "isFree": true,
+          "platform": "Vue",
+          "duration": "8小时",
+          "rating": 5
+        },
+        {
+          "id": "fr8b",
+          "title": "Vue3实战",
+          "type": "course",
+          "isFree": false,
+          "platform": "极客时间",
+          "duration": "15小时",
+          "rating": 4
         }
       ],
-      "subNodes": []
+      "subNodes": [
+        { "id": "vue-basics", "title": "Vue基础", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "vue-composition", "title": "Composition API", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "vue-router", "title": "Vue Router", "estimatedTime": { "value": 6, "unit": "hours" } },
+        { "id": "vue-pinia", "title": "Pinia状态管理", "estimatedTime": { "value": 8, "unit": "hours" } }
+      ]
     },
     {
       "id": "nodejs",
       "type": "phase",
       "title": "Node.js基础",
-      "description": "Express/Koa、NPM 包发布、接口开发",
+      "difficulty": "intermediate",
+      "description": "Express/Koa、NPM包发布、接口开发、数据库基础",
       "icon": "🟢",
       "estimatedTime": {
         "value": 20,
         "unit": "hours",
         "note": "约6天"
       },
-      "resources": [],
-      "subNodes": []
+      "resources": [
+        {
+          "id": "fr9",
+          "title": "Node.js入门",
+          "type": "article",
+          "url": "https://nodejs.org/zh-cn/docs/",
+          "isFree": true,
+          "platform": "Node.js",
+          "duration": "5小时",
+          "rating": 4
+        },
+        {
+          "id": "fr9b",
+          "title": "Express框架",
+          "type": "article",
+          "url": "https://expressjs.com/zh-cn/",
+          "isFree": true,
+          "platform": "Express",
+          "duration": "4小时",
+          "rating": 4
+        }
+      ],
+      "subNodes": [
+        { "id": "node-basics", "title": "Node基础", "estimatedTime": { "value": 6, "unit": "hours" } },
+        { "id": "node-express", "title": "Express框架", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "node-api", "title": "API开发", "estimatedTime": { "value": 6, "unit": "hours" } }
+      ]
     },
     {
       "id": "frontend-project",
       "type": "phase",
       "title": "项目实战",
-      "description": "完整前端项目（如博客系统/管理后台）",
+      "difficulty": "advanced",
+      "description": "完整前端项目（如博客系统、管理后台）",
       "icon": "🚀",
       "estimatedTime": {
         "value": 10,
         "unit": "hours",
         "note": "约3天"
       },
-      "resources": [],
-      "subNodes": []
+      "resources": [
+        {
+          "id": "fr10",
+          "title": "前端项目实战",
+          "type": "project",
+          "isFree": false,
+          "platform": "慕课网",
+          "duration": "20小时",
+          "rating": 4
+        }
+      ],
+      "subNodes": [
+        { "id": "proj-plan", "title": "项目规划", "estimatedTime": { "value": 2, "unit": "hours" } },
+        { "id": "proj-dev", "title": "开发实现", "estimatedTime": { "value": 5, "unit": "hours" } },
+        { "id": "proj-deploy", "title": "部署上线", "estimatedTime": { "value": 3, "unit": "hours" } }
+      ]
     }
   ],
   "locale": "zh-CN",

@@ -33,6 +33,7 @@
       "id": "llm-basics",
       "type": "phase",
       "title": "LLM 基础概念",
+      "difficulty": "beginner",
       "description": "了解 GPT/LLaMA/Claude 等模型原理、能力边界、Token 概念",
       "icon": "🧠",
       "estimatedTime": {
@@ -48,7 +49,9 @@
           "url": "https://example.com/llm-basics",
           "isFree": true,
           "description": "通俗易懂的大模型原理科普文章",
-          "platform": "微信公众号"
+          "platform": "微信公众号",
+          "duration": "1小时",
+          "rating": 4
         },
         {
           "id": "r2",
@@ -57,7 +60,19 @@
           "url": "https://platform.openai.com/docs",
           "isFree": true,
           "description": "OpenAI官方API文档",
-          "platform": "OpenAI"
+          "platform": "OpenAI",
+          "duration": "3小时",
+          "rating": 5
+        },
+        {
+          "id": "r2b",
+          "title": "GPT-4 技术报告",
+          "type": "article",
+          "url": "https://arxiv.org/abs/2303.08774",
+          "isFree": true,
+          "platform": "arXiv",
+          "duration": "4小时",
+          "rating": 5
         }
       ],
       "subNodes": [
@@ -73,7 +88,9 @@
               "type": "tool",
               "url": "https://platform.openai.com/tokenizer",
               "isFree": true,
-              "platform": "OpenAI"
+              "platform": "OpenAI",
+              "duration": "30分钟",
+              "rating": 5
             }
           ]
         },
@@ -87,7 +104,10 @@
               "id": "r4",
               "title": "GPT-4 vs Claude vs LLaMA对比",
               "type": "article",
-              "isFree": true
+              "isFree": true,
+              "platform": "知乎",
+              "duration": "1小时",
+              "rating": 4
             }
           ]
         }
@@ -97,6 +117,7 @@
       "id": "prompt-engineering",
       "type": "phase",
       "title": "Prompt 工程",
+      "difficulty": "intermediate",
       "description": "编写高效 Prompt、结构化输出、Few-shot 技巧",
       "icon": "✍️",
       "estimatedTime": {
@@ -109,9 +130,11 @@
           "id": "r5",
           "title": "Prompt Engineering Guide",
           "type": "course",
-          "url": "https://prompt engineeringguide.com",
+          "url": "https://www.promptengineering.org/",
           "isFree": true,
-          "platform": "DeepLearning.AI"
+          "platform": "DeepLearning.AI",
+          "duration": "6小时",
+          "rating": 5
         },
         {
           "id": "r6",
@@ -119,7 +142,19 @@
           "type": "article",
           "url": "https://platform.openai.com/docs/guides/structured-outputs",
           "isFree": true,
-          "platform": "OpenAI"
+          "platform": "OpenAI",
+          "duration": "2小时",
+          "rating": 5
+        },
+        {
+          "id": "r5b",
+          "title": "Chain of Thought提示",
+          "type": "article",
+          "url": "https://arxiv.org/abs/2201.11903",
+          "isFree": true,
+          "platform": "arXiv",
+          "duration": "2小时",
+          "rating": 5
         }
       ],
       "subNodes": [
@@ -143,6 +178,7 @@
       "id": "api-integration",
       "type": "phase",
       "title": "API 接入实战",
+      "difficulty": "intermediate",
       "description": "OpenAI API / Claude API / 国内模型（文心/通义）调用",
       "icon": "🔌",
       "estimatedTime": {
@@ -155,9 +191,31 @@
           "id": "r7",
           "title": "Python调用OpenAI API实战",
           "type": "video",
+          "url": "https://www.bilibili.com/video/BV1qK4y1a7",
           "isFree": true,
-          "platform": "B站",
-          "duration": "2h"
+          "platform": "Bilibili",
+          "duration": "2小时",
+          "rating": 4
+        },
+        {
+          "id": "r7b",
+          "title": "Claude API接入指南",
+          "type": "article",
+          "url": "https://docs.anthropic.com/",
+          "isFree": true,
+          "platform": "Anthropic",
+          "duration": "2小时",
+          "rating": 5
+        },
+        {
+          "id": "r7c",
+          "title": "阿里通义千问API",
+          "type": "article",
+          "url": "https://help.aliyun.com/document_detail/258",
+          "isFree": true,
+          "platform": "阿里云",
+          "duration": "2小时",
+          "rating": 4
         }
       ],
       "subNodes": []
@@ -166,6 +224,7 @@
       "id": "rag",
       "type": "phase",
       "title": "RAG 检索增强生成",
+      "difficulty": "advanced",
       "description": "文档切分、向量数据库、Embedding 实战",
       "icon": "📚",
       "estimatedTime": {
@@ -178,9 +237,30 @@
           "id": "r8",
           "title": "RAG系统构建指南",
           "type": "course",
+          "url": "https://academy.langchain.com/",
           "isFree": false,
           "platform": "LangChain Academy",
-          "duration": "8h"
+          "duration": "8小时",
+          "rating": 5
+        },
+        {
+          "id": "r8b",
+          "title": "向量数据库对比",
+          "type": "article",
+          "isFree": true,
+          "platform": "知乎",
+          "duration": "2小时",
+          "rating": 4
+        },
+        {
+          "id": "r8c",
+          "title": "Milvus向量数据库教程",
+          "type": "article",
+          "url": "https://milvus.io/docs",
+          "isFree": true,
+          "platform": "Milvus",
+          "duration": "3小时",
+          "rating": 4
         }
       ],
       "subNodes": []
@@ -189,6 +269,7 @@
       "id": "agent-development",
       "type": "phase",
       "title": "Agent 开发",
+      "difficulty": "advanced",
       "description": "工具调用、Multi-Agent 协作框架（LangChain / Coze）",
       "icon": "🤖",
       "estimatedTime": {
@@ -202,14 +283,30 @@
           "title": "LangChain Agents教程",
           "type": "course",
           "url": "https://python.langchain.com/docs/tutorials/",
-          "isFree": true
+          "isFree": true,
+          "platform": "LangChain",
+          "duration": "6小时",
+          "rating": 5
         },
         {
           "id": "r10",
           "title": "Coze平台入门",
           "type": "article",
+          "url": "https://www.coze.com/docs",
           "isFree": true,
-          "platform": "Coze"
+          "platform": "Coze",
+          "duration": "3小时",
+          "rating": 4
+        },
+        {
+          "id": "r10b",
+          "title": "AutoGPT实战",
+          "type": "project",
+          "url": "https://github.com/Significant-Gravitas/AutoGPT",
+          "isFree": true,
+          "platform": "GitHub",
+          "duration": "4小时",
+          "rating": 3
         }
       ],
       "subNodes": []
@@ -218,6 +315,7 @@
       "id": "final-project",
       "type": "phase",
       "title": "项目实战",
+      "difficulty": "advanced",
       "description": "从 0 到 1 完成一个完整 AI 应用（如智能客服 / 知识库问答）",
       "icon": "🚀",
       "estimatedTime": {
@@ -231,7 +329,18 @@
           "title": "企业级RAG系统实战",
           "type": "project",
           "isFree": false,
-          "duration": "10h"
+          "platform": "极客时间",
+          "duration": "10小时",
+          "rating": 5
+        },
+        {
+          "id": "r11b",
+          "title": "LangChain项目实战",
+          "type": "project",
+          "isFree": false,
+          "platform": "慕课网",
+          "duration": "12小时",
+          "rating": 4
         }
       ],
       "subNodes": []

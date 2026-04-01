@@ -1,15 +1,13 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Clock, BookOpen, Heart, Share2, ArrowLeft } from "lucide-react";
+import { Clock, BookOpen, ArrowLeft } from "lucide-react";
 import Badge from "@/components/ui/Badge";
-import Button from "@/components/ui/Button";
 import Breadcrumb from "@/components/layout/Breadcrumb";
-import RoadmapTree from "@/components/roadmap/RoadmapTree";
-import ProgressTracker from "@/components/roadmap/ProgressTracker";
 import { RoadmapJsonLd } from "@/components/seo/JsonLd";
 import { getRoadmapBySlug, getAllRoadmapSlugs } from "@/lib/roadmaps";
 import { SITE_CONFIG } from "@/config/site";
+import RoadmapDetailClient from "@/components/roadmap/RoadmapDetailClient";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -59,9 +57,6 @@ export default async function RoadmapPage({ params }: PageProps) {
     <>
       <RoadmapJsonLd roadmap={roadmap} url={url} />
 
-      {/* Progress Tracker */}
-      <ProgressTracker totalNodes={totalNodes} roadmapId={roadmap.id} />
-
       <div className="max-w-4xl mx-auto px-4 py-6">
         {/* Breadcrumb */}
         <Breadcrumb
@@ -82,7 +77,7 @@ export default async function RoadmapPage({ params }: PageProps) {
           返回路线列表
         </Link>
 
-        {/* Header */}
+        {/* Static Header Info (before interactive client component) */}
         <div className="bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 p-6 mb-6">
           <div className="flex items-start justify-between gap-4 mb-4">
             <div>
@@ -111,7 +106,7 @@ export default async function RoadmapPage({ params }: PageProps) {
           <p className="text-slate-600 dark:text-slate-400 mb-4">{roadmap.description}</p>
 
           {/* Tags */}
-          <div className="flex flex-wrap gap-2 mb-4">
+          <div className="flex flex-wrap gap-2">
             {roadmap.tags.map((tag) => (
               <span
                 key={tag}
@@ -121,30 +116,20 @@ export default async function RoadmapPage({ params }: PageProps) {
               </span>
             ))}
           </div>
-
-          {/* Actions */}
-          <div className="flex gap-3">
-            <Button variant="primary" className="flex-1">
-              开始学习
-            </Button>
-            <Button variant="outline" className="flex items-center gap-2">
-              <Heart className="w-4 h-4" />
-              收藏
-            </Button>
-            <Button variant="ghost" className="flex items-center gap-2">
-              <Share2 className="w-4 h-4" />
-              分享
-            </Button>
-          </div>
         </div>
 
-        {/* Roadmap Tree */}
-        <div className="bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 p-6">
-          <h2 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-4">
-            学习路线图
-          </h2>
-          <RoadmapTree nodes={roadmap.nodes} />
-        </div>
+        {/* Interactive Client Component */}
+        <RoadmapDetailClient
+          roadmapId={roadmap.id}
+          roadmapTitle={roadmap.title}
+          roadmapDescription={roadmap.description}
+          roadmapSlug={roadmap.slug}
+          totalNodes={totalNodes}
+          estimatedTime={roadmap.estimatedTime.value}
+          suitableFor={roadmap.suitableFor}
+          difficulty={roadmap.difficulty}
+          nodes={roadmap.nodes}
+        />
       </div>
     </>
   );

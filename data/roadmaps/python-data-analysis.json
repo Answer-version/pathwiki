@@ -33,87 +33,144 @@
       "id": "python-basics",
       "type": "phase",
       "title": "Python基础",
+      "difficulty": "beginner",
       "description": "语法、数据类型、控制流、函数与模块",
       "icon": "🐍",
       "estimatedTime": { "value": 30, "unit": "hours", "note": "约10天" },
       "resources": [
-        { "id": "pr1", "title": "Python Crash Course", "type": "book", "isFree": false, "author": "Eric Matthes" }
+        { "id": "pr1", "title": "Python Crash Course", "type": "book", "isFree": false, "author": "Eric Matthes", "platform": "No Starch Press", "rating": 5 },
+        { "id": "pr1b", "title": "Python官方教程", "type": "article", "url": "https://docs.python.org/zh-cn/3/tutorial/", "isFree": true, "platform": "Python", "duration": "10小时", "rating": 4 }
       ],
-      "subNodes": []
+      "subNodes": [
+        { "id": "py-syntax", "title": "语法基础", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "py-dtypes", "title": "数据类型", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "py-functions", "title": "函数与模块", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "py-oop", "title": "面向对象", "estimatedTime": { "value": 6, "unit": "hours" } }
+      ]
     },
     {
       "id": "numpy-pandas",
       "type": "phase",
       "title": "数据分析核心库",
+      "difficulty": "intermediate",
       "description": "NumPy（数组运算）、Pandas（数据清洗/分析）",
       "icon": "📊",
       "estimatedTime": { "value": 40, "unit": "hours", "note": "约13天" },
       "resources": [
-        { "id": "pr2", "title": "利用Python进行数据分析", "type": "book", "isFree": false, "author": "Wes McKinney" }
+        { "id": "pr2", "title": "利用Python进行数据分析", "type": "book", "isFree": false, "author": "Wes McKinney", "platform": " O'Reilly", "rating": 5 },
+        { "id": "pr2b", "title": "Pandas官方文档", "type": "article", "url": "https://pandas.pydata.org/docs/", "isFree": true, "platform": "Pandas", "duration": "8小时", "rating": 5 },
+        { "id": "pr2c", "title": "NumPy入门教程", "type": "video", "url": "https://www.bilibili.com/video/BV1qK4y1a7", "isFree": true, "platform": "Bilibili", "duration": "6小时", "rating": 4 }
       ],
-      "subNodes": []
+      "subNodes": [
+        { "id": "numpy-intro", "title": "NumPy数组", "estimatedTime": { "value": 10, "unit": "hours" } },
+        { "id": "pandas-series", "title": "Pandas Series", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "pandas-df", "title": "DataFrame", "estimatedTime": { "value": 12, "unit": "hours" } },
+        { "id": "pandas-clean", "title": "数据清洗", "estimatedTime": { "value": 10, "unit": "hours" } }
+      ]
     },
     {
       "id": "visualization",
       "type": "phase",
       "title": "数据可视化",
+      "difficulty": "intermediate",
       "description": "Matplotlib、Seaborn、Plotly，产出可发表级别的图表",
       "icon": "📈",
       "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
-      "resources": [],
-      "subNodes": []
+      "resources": [
+        { "id": "pr3a", "title": "Matplotlib教程", "type": "article", "url": "https://matplotlib.org/stable/tutorials/", "isFree": true, "platform": "Matplotlib", "duration": "5小时", "rating": 4 },
+        { "id": "pr3b", "title": "Seaborn可视化", "type": "course", "isFree": false, "platform": "Coursera", "duration": "8小时", "rating": 4 }
+      ],
+      "subNodes": [
+        { "id": "vis-matplotlib", "title": "Matplotlib基础", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "vis-seaborn", "title": "Seaborn高级", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "vis-plotly", "title": "Plotly交互", "estimatedTime": { "value": 9, "unit": "hours" } }
+      ]
     },
     {
       "id": "statistics",
       "type": "phase",
       "title": "统计分析基础",
+      "difficulty": "intermediate",
       "description": "描述性统计、假设检验、AB Test 理解",
       "icon": "📉",
       "estimatedTime": { "value": 25, "unit": "hours", "note": "约8天" },
-      "resources": [],
-      "subNodes": []
+      "resources": [
+        { "id": "pr4a", "title": "统计学基础", "type": "course", "isFree": false, "platform": "网易云课堂", "duration": "10小时", "rating": 4 }
+      ],
+      "subNodes": [
+        { "id": "stat-desc", "title": "描述性统计", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "stat-hypothesis", "title": "假设检验", "estimatedTime": { "value": 10, "unit": "hours" } },
+        { "id": "stat-ab", "title": "AB Test", "estimatedTime": { "value": 7, "unit": "hours" } }
+      ]
     },
     {
       "id": "sql",
       "type": "phase",
       "title": "数据库与SQL",
+      "difficulty": "beginner",
       "description": "MySQL 查询、Python 数据库连接",
       "icon": "🗄️",
       "estimatedTime": { "value": 20, "unit": "hours", "note": "约7天" },
-      "resources": [],
-      "subNodes": []
+      "resources": [
+        { "id": "pr5a", "title": "SQL基础教程", "type": "course", "url": "https://www.w3schools.com/sql/", "isFree": true, "platform": "W3Schools", "duration": "6小时", "rating": 4 },
+        { "id": "pr5b", "title": "MySQL必知必会", "type": "book", "isFree": false, "author": "Ben Forta", "platform": "人民邮电出版社", "rating": 5 }
+      ],
+      "subNodes": [
+        { "id": "sql-basics", "title": "SQL基础", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "sql-join", "title": "连接查询", "estimatedTime": { "value": 6, "unit": "hours" } },
+        { "id": "sql-python", "title": "Python连接", "estimatedTime": { "value": 6, "unit": "hours" } }
+      ]
     },
     {
       "id": "excel-bi",
       "type": "phase",
       "title": "Excel/BI工具联动",
+      "difficulty": "beginner",
       "description": "Python 与 BI 的互补应用场景",
       "icon": "📋",
       "estimatedTime": { "value": 15, "unit": "hours", "note": "约5天" },
-      "resources": [],
-      "subNodes": []
+      "resources": [
+        { "id": "pr6a", "title": "Excel数据分析", "type": "video", "url": "https://www.bilibili.com/video/BV1NJ41167", "isFree": true, "platform": "Bilibili", "duration": "8小时", "rating": 4 }
+      ],
+      "subNodes": [
+        { "id": "excel-python", "title": "Excel与Python", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "bi-tools", "title": "BI工具入门", "estimatedTime": { "value": 7, "unit": "hours" } }
+      ]
     },
     {
       "id": "ml-intro",
       "type": "phase",
       "title": "机器学习入门",
+      "difficulty": "advanced",
       "description": "Scikit-learn 基础算法、模型评估",
       "icon": "🤖",
       "estimatedTime": { "value": 30, "unit": "hours", "note": "约10天" },
       "resources": [
-        { "id": "pr3", "title": "机器学习实战", "type": "book", "isFree": false }
+        { "id": "pr7", "title": "机器学习实战", "type": "book", "isFree": false, "author": "Peter Harrington", "platform": "机械工业出版社", "rating": 4 },
+        { "id": "pr7b", "title": "Scikit-learn官方教程", "type": "article", "url": "https://scikit-learn.org/stable/tutorial/", "isFree": true, "platform": "Scikit-learn", "duration": "10小时", "rating": 5 }
       ],
-      "subNodes": []
+      "subNodes": [
+        { "id": "ml-supervised", "title": "监督学习", "estimatedTime": { "value": 12, "unit": "hours" } },
+        { "id": "ml-unsupervised", "title": "无监督学习", "estimatedTime": { "value": 10, "unit": "hours" } },
+        { "id": "ml-eval", "title": "模型评估", "estimatedTime": { "value": 8, "unit": "hours" } }
+      ]
     },
     {
       "id": "data-project",
       "type": "phase",
       "title": "项目实战",
+      "difficulty": "advanced",
       "description": "完整数据分析报告（如电商用户行为分析/股票数据解读）",
       "icon": "🚀",
       "estimatedTime": { "value": 15, "unit": "hours", "note": "约5天" },
-      "resources": [],
-      "subNodes": []
+      "resources": [
+        { "id": "pr8", "title": "数据分析项目实战", "type": "project", "isFree": false, "platform": "慕课网", "duration": "12小时", "rating": 4 }
+      ],
+      "subNodes": [
+        { "id": "proj-plan", "title": "项目规划", "estimatedTime": { "value": 3, "unit": "hours" } },
+        { "id": "proj-analysis", "title": "数据分析", "estimatedTime": { "value": 8, "unit": "hours" } },
+        { "id": "proj-report", "title": "报告撰写", "estimatedTime": { "value": 4, "unit": "hours" } }
+      ]
     }
   ],
   "locale": "zh-CN",
